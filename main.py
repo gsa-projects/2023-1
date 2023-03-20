@@ -1,22 +1,30 @@
-# print("안녕하세요"[0])
-# print("안녕하세요"[1])
-# print("안녕하세요"[2])
-# print("안녕하세요"[3])
-# print("안녕하세요"[4])
+# number = 12345 # input("수를 입력: ")
+# print(number) # 12345
+# print(type(number)) # <class 'int'>
+# print(type(type(number)))   # <class 'type'>
+# print(type(type(type(number))))   # <class 'type'>
+# print(type("str")(number) + "235632") # '12345'
+# print(str(number)) # '12345'
 
-# print("안녕하세요"[-1])
-# print("안녕하세요"[-2])
-# print("안녕하세요"[-3])
-# print("안녕하세요"[-4])
-# print("안녕하세요"[-5])
+# string_a = input("iuput A: ")
+# int_a = int(string_a)
 
-# print("안녕하세요"[len("안녕하세요")-1])
+# string_b = input("iuput B: ")
+# int_b = int(string_b)
 
-# print("안녕하세요"[0:2])
-# print("안녕하세요"[:2])
-# print("안녕하세요"[2:])
+# print("string:", string_a + string_b)
+# print("int:", int_a + int_b)
 
-a = "20230306sunny"
-date = a[:8]
-weather = a[8:]
-print(f'{date} is {weather}')
+# output_a = int("52.34567")
+# print(output_a)
+
+# a..z < 그리스문자 < ㄱ..ㅎ 순서임
+# print('a' < 'π' < 'ㄱ')
+
+import random
+students = [f"{i:<3}" for i in range (1, 18)]
+
+random.shuffle(students)
+
+for i in range (0, len(students), 4):
+    print(*students[i:i+4])
