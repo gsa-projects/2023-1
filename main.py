@@ -21,7 +21,7 @@
 # a..z < 그리스문자 < ㄱ..ㅎ 순서임
 # print('a' < 'π' < 'ㄱ')
 
-from math import *
+from math import * 
 
 # x = 89
 # print(log2(x))
@@ -56,13 +56,13 @@ from math import *
 # 2 -> 1.xx
 # 2^2-1 - 2^0 = 3 - 1 = 2 == 2
 
-# output = []
-# for x in range(1, 101):
-# 	big = 2**(floor(log2(x)) + 1) - 1
-# 	diff = big - x
-# 	print(x, big, diff)
-# 	if big > 1 and (diff != 0 and log2(diff) == int(log2(diff))):
-# 		output.append(x)
+output = []
+for x in range(1, 101):
+	big = 2**(floor(log2(x)) + 1) - 1
+	diff = big - x
+	print(x, big, diff)
+	if big > 1 and (diff != 0 and log2(diff) == int(log2(diff))):
+		output.append(x)
 
 output = [x for x in range(1, 101) if (2**(floor(log2(x)) + 1) - 1 - x != 0 and log2(2**(floor(log2(x)) + 1) - 1 - x) == int(log2(2**(floor(log2(x)) + 1) - 1 - x)))]
 print(output)
