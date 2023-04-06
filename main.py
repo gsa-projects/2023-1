@@ -56,13 +56,38 @@ from math import *
 # 2 -> 1.xx
 # 2^2-1 - 2^0 = 3 - 1 = 2 == 2
 
-output = []
-for x in range(1, 101):
-	big = 2**(floor(log2(x)) + 1) - 1
-	diff = big - x
-	print(x, big, diff)
-	if big > 1 and (diff != 0 and log2(diff) == int(log2(diff))):
-		output.append(x)
+# output = []
+# for x in range(1, 101):
+# 	big = 2**(floor(log2(x)) + 1) - 1
+# 	diff = big - x
+# 	print(x, big, diff)
+# 	if big > 1 and (diff != 0 and log2(diff) == int(log2(diff))):
+# 		output.append(x)
 
-output = [x for x in range(1, 101) if (2**(floor(log2(x)) + 1) - 1 - x != 0 and log2(2**(floor(log2(x)) + 1) - 1 - x) == int(log2(2**(floor(log2(x)) + 1) - 1 - x)))]
-print(output)
+# output = [x for x in range(1, 101) if (2**(floor(log2(x)) + 1) - 1 - x != 0 and log2(2**(floor(log2(x)) + 1) - 1 - x) == int(log2(2**(floor(log2(x)) + 1) - 1 - x)))]
+# print(output)
+
+inp = input().upper()
+counts = {}
+
+max_count = 0
+for c in inp:
+	if c not in counts:
+		counts[c] = 0
+	
+	counts[c] += 1
+	if counts[c] > max_count:
+		max_count = counts[c]
+
+is_more = 0
+answer = ''
+for alphabet, count in counts.items():
+	if count == max_count:
+		is_more += 1
+		answer = alphabet
+	
+	if is_more >= 2:
+		print("?")
+		exit()
+
+print(answer)
