@@ -14,7 +14,5 @@ if valid:
         digits.insert(0, num % 1000)
         num //= 1000
 
-    ans = ''
-    for e in digits:
-        ans += "{},".format(e)
-    print(ans[:-1])
+    digits = list(map(str, digits))
+    print(','.join(digits))
