@@ -21,7 +21,7 @@
 # a..z < 그리스문자 < ㄱ..ㅎ 순서임
 # print('a' < 'π' < 'ㄱ')
 
-from math import * 
+# from math import * 
 
 # x = 89
 # print(log2(x))
@@ -66,7 +66,14 @@ from math import *
 
 # output = [x for x in range(1, 101) if (2**(floor(log2(x)) + 1) - 1 - x != 0 and log2(2**(floor(log2(x)) + 1) - 1 - x) == int(log2(2**(floor(log2(x)) + 1) - 1 - x)))]
 # print(output)
+x = map(int, "123")
+dic = {
+    0: "hello",
+    3.5: "world",
+    int: "!",
+    x: "123"
+}
 
-str = "shout out to {}!!"
-print(str)
-print(str.format("rhs"))
+print(dic[0])
+print(dic[x])
+print(dic[int])
