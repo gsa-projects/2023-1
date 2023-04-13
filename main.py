@@ -66,14 +66,29 @@
 
 # output = [x for x in range(1, 101) if (2**(floor(log2(x)) + 1) - 1 - x != 0 and log2(2**(floor(log2(x)) + 1) - 1 - x) == int(log2(2**(floor(log2(x)) + 1) - 1 - x)))]
 # print(output)
-x = map(int, "123")
-dic = {
-    0: "hello",
-    3.5: "world",
-    int: "!",
-    x: "123"
-}
+# x = map(int, "123")
+# dic = {
+#     0: "hello",
+#     3.5: "world",
+#     int: "!",
+#     x: "123"
+# }
 
-print(dic[0])
-print(dic[x])
-print(dic[int])
+# print(dic[0])
+# print(dic[x])
+# print(dic[int])
+
+n = int(input("number: "))
+
+소수임 = True
+나눌_수 = 2
+while 나눌_수 <= n-1: # 2부터 n-1까지 반복
+    if n % 나눌_수 == 0:    # n이 2에서 n-1 사이의 어떤 수로 나누어 떨어지면
+        소수임 = False
+        break
+    나눌_수 += 1
+
+if 소수임:
+    print("소수임")
+else:
+    print("소수 아님")
