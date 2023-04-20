@@ -78,17 +78,16 @@
 # print(dic[x])
 # print(dic[int])
 
-n = int(input("number: "))
+# print(dic[3.5])   \
+# print(dic[int])   | -> error
 
-소수임 = True
-나눌_수 = 2
-while 나눌_수 <= n-1: # 2부터 n-1까지 반복
-    if n % 나눌_수 == 0:    # n이 2에서 n-1 사이의 어떤 수로 나누어 떨어지면
-        소수임 = False
-        break
-    나눌_수 += 1
+# print(dic[3.5])   /
+# print(dic[int])   \
+ss = "2645323sity"
 
-if 소수임:
-    print("소수임")
-else:
-    print("소수 아님")
+print("sity:", ss.find("sity"))
+print('sity:', ss.find("sity"))
+print("sity: %d" % ss.find("sity"))
+print("sity: {}".format(ss.find("sity")))
+print(f"sity: {ss.find('sity')}")
+print("sity: " + str(ss.find("sity")))
