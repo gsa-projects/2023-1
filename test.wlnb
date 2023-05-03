@@ -1,0 +1,78 @@
+{
+ "cells": [
+  {
+   "kind": 2,
+   "value": "Integrate[1/(1 + x^2), x]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><w>ArcTan</w><wrow><w></w><wb>[</wb><w>x</w><wb>]</wb></wrow></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "ArcTan[x]",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "2d115678-98fc-403c-a7b8-7df244780b8e",
+     "metadata": {
+      "cellLabel": "Out[2]= ",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1682909345105,
+     "endTime": 1682909345276
+    },
+    "executionOrder": 2,
+    "success": true
+   }
+  },
+  {
+   "kind": 2,
+   "value": "Solve[x^2 + 2 x + 1 == 0, x]",
+   "languageId": "wolfram",
+   "outputs": [
+    {
+     "items": [
+      {
+       "data": "<div class=\"wexpr\"><wrow><w></w><wb>{</wb><wrow><w></w><wrow><w></w><wb>{</wb><wrow><w></w><w>x</w><w class=\"symbol\"></w><wrow><w></w><w>-</w><w>1</w></wrow></wrow><wb>}</wb></wrow><w>,</w><wrow><w></w><wb>{</wb><wrow><w></w><w>x</w><w class=\"symbol\"></w><wrow><w></w><w>-</w><w>1</w></wrow></wrow><wb>}</wb></wrow></wrow><wb>}</wb></wrow></div>",
+       "mime": "x-application/wolfram-language-html"
+      },
+      {
+       "data": "{{x -> -1}, {x -> -1}}",
+       "mime": "text/plain"
+      }
+     ],
+     "id": "e9e8fb2f-bcaf-4778-b898-72c82d16c86a",
+     "metadata": {
+      "cellLabel": "Out[3]= ",
+      "isBoxData": false
+     }
+    }
+   ],
+   "metadata": {},
+   "executionSummary": {
+    "timing": {
+     "startTime": 1682909357039,
+     "endTime": 1682909357267
+    },
+    "executionOrder": 3,
+    "success": true
+   }
+  },
+  {
+   "kind": 2,
+   "value": "",
+   "languageId": "wolfram",
+   "outputs": [],
+   "metadata": {},
+   "executionSummary": {}
+  }
+ ]
+}
